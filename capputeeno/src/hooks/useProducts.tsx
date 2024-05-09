@@ -1,6 +1,7 @@
-import {useQuery} from "@tanstack/react-query";
-import axios, {AxiosPromise} from "axios";
+
+import axios, {AxiosPromise} from 'axios';
 import {ProductsFetchResponse} from "@/types/products-list-response";
+import {useQuery} from "@tanstack/react-query";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL as string;
 
