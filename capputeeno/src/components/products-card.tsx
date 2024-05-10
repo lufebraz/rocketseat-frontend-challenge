@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {formatPrice} from "@/utils.format-price";
+import {formatPrice} from "@/utils/format-price";
 
 interface ProductsCardProps {
     image: string,
@@ -15,14 +15,14 @@ const Card = styled.div`
     
     background: rgba(255,255,255,0.4);
     backdrop-filter: blur(10px);
-    border-radius: 4px;
+    border-radius: 6px;
     
     width: 256px;
     
     img {
         width: 256px;
         height: 300px;
-        border-radius: 4px 4px 0 0;
+        border-radius: 6px 6px 0 0;
     }
     
     h3 {

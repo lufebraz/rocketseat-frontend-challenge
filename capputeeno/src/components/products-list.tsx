@@ -2,6 +2,7 @@
 import {useProducts} from "@/hooks/useProducts";
 import {ProductsCard} from "@/components/products-card";
 import styled from "styled-components";
+import {useFilter} from "@/hooks/useFilter";
 
 
 const ListContainer = styled.div`
@@ -15,7 +16,8 @@ const ListContainer = styled.div`
 
 export function ProductsList() {
     const { data } = useProducts()
-    console.log(data)
+    const priority = useFilter();
+
     return(
         <ListContainer>
             {data?.map(product =>
